@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Books - Book Hustle</title>
+    <body style="background-color: bisque;"></body>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f9f9f9; }
+        h1 { background-color: #ff9800; color: rgb(220, 222, 174); padding: 10px; }
+        form { background: white; padding: 15px; width: 300px; margin: auto; border-radius: 5px; }
+        input, select, button { width: 90%; margin: 8px; padding: 8px; }
+        button { background: #ff9800; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <img src="images/book6.jpg" width="100" height="80">
+
+    <h1>Donate a Book</h1>
+    <p>Give your old books a new home!</p>
+    <form action="donate.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="book" placeholder="Book Title" required>
+        <select name="condition" required>
+            <option value="">Select Condition</option>
+            <option value="New">New</option>
+            <option value="Good">Good</option>
+            <option value="Used">Used</option>
+        </select>
+        <button type="submit">Donate</button>
+    </form>
+    <h2>Why Donate?</h2>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/edDeSaMic5c?si=wnVwdnSVomvlJZD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> frameborder="0" allowfullscreen></iframe>
+
+</body>
+</html>
